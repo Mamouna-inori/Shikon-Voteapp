@@ -31,6 +31,8 @@ jobs:
           flutter clean
           flutter pub get
           flutter build web
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
       # ステップ4: ビルド成果物を公開用リポジトリにデプロイ
       - name: Deploy to GitHub Pages
